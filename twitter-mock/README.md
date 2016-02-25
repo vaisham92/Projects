@@ -1,6 +1,6 @@
-****************************************************************************************************************
-**************************************************Twitter Mock**************************************************
-****************************************************************************************************************
+************************************************************************************
+									Twitter Mock									
+************************************************************************************
 
 This is a twitter mock UI that I have developed.
 Its based on material design and I have used the
@@ -11,7 +11,7 @@ Disclaimer: This is purely a mock and not intended to infringe the copy right of
 
 Please find the live html pages at:
 
-\na. Index Page:
-\nb. Sign Up Page:
-\nc. Log In Page:
-\nd. Home Page:
+a. Index Page:
+b. Sign Up Page:
+c. Log In Page:
+d. Home Page:
