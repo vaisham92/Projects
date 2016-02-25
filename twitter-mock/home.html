@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Twitter</title>
+
+	<!-- Css folder -->
+	<link type="text/css" href="css/materialize.css" rel="stylesheet" media="screen,projection">
+	<link type="text/css" href="css/materialize.min.css" rel="stylesheet" media="screen,projection">
+	<link type="text/css" href="css/icon.css" rel="stylesheet" media="screen,projection"/>
+	<link type="text/css" href="css/sticky-footer.css" rel="stylesheet" media="screen,projection"/>
+
+	<!-- Font folder -->
+	<!-- material-design-icons folder -->
+	<link href="font/material-design-icons/Material-Design-Icons.eot" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.svg" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.ttf" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.woff" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.woff2" rel="stylesheet" type="text/css">
+	<!-- roboto Folder -->
+	<link href="font/roboto/Roboto-Bold.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Bold.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Bold.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Bold.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.woff2" rel="stylesheet" type="text/css">
+
+	<!-- js folder -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/angular-sanitize.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="https://abs.twimg.com/favicons/favicon.ico"/>
+</head>
+<body>
+	<header>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper grey lighten-4">
+					<ul class="left hide-on-med-and-down">
+						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+						<li><a class="waves-effect blue-text text-lighten-1" href="#"><i class="material-icons left">home</i>Home</a></li>
+						<li><a class="waves-effect blue-text text-lighten-1" href="#"><i class="material-icons left">notifications</i>Notifications</a></li>
+						<li><a class="waves-effect blue-text text-lighten-1" href="#"><i class="material-icons left">mail</i>Messages</a></li>
+						<li><div class="bold brand-logo center">&nbsp&nbsp&nbsp<img src="twitter_blue.ico">&nbsp&nbsp&nbsp</div></li>
+					</ul>
+					<ul class="right hide-on-med-and-down">
+						<!-- Dropdown Trigger -->
+						<li><a class="dropdown-button" href="#!" data-activates="dropdown1"><img style="border-radius:6px" src="vaisham.png" height="30" width="36"></a></li>
+						<li><a class="waves effect waves-light hoverable blue lighten-2" href="#"><i class="material-icons left">border_color</i>Tweet</a></li>
+					</ul>
+					<ul id="dropdown1" class="dropdown-content">
+						<li><a class="waves effect waves-light hoverable bold" href="#!">My Profile</a></li>
+						<li><a class="waves effect waves-light hoverable" href="#!">Account Settings</a></li>
+						<li class="divider"></li>
+						<li><a class="waves effect waves-light hoverable" href="#!">Help</a></li>
+						<li><a class="waves effect waves-light hoverable" href="#!">Privacy</a></li>
+						<li class="divider"></li>
+						<li><a class="waves effect waves-light hoverable" href="#!">Settings</a></li>
+						<li><a class="waves effect waves-light hoverable" href="login.html">Log out</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div>
+			<div class="row">
+				<div class="col s12 m4 l3">
+					<div class="row">
+						<div class="col s12">
+							<div class="card grey lighten-4">
+								<div class="card-image">
+									<img src="twitter_blue.png" height="90">
+								</div>
+								<div class="card-content">
+									<div class="row">
+										<div class="col s4 m6 l3">
+											<a href="">
+												<img class="hoverable" style="border-radius:6px" src="vaisham.png" height="55" width="55" border="5">
+											</a>
+										</div>
+										<div class="col s4 m6">
+											<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan Reddy</a>
+										</div>
+										<div class="col s4 m6">
+											<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s4 m6 l3">
+											<p class="waves-effect grey-text text-darken-2">Tweets</p>
+											<p class="waves-effect blue-text text-darken-2">4</p>
+										</div>
+										<div class="col s4 m6 l4">
+											<p class="waves-effect grey-text text-darken-2">Following</p>
+											<p class="waves-effect blue-text text-darken-2">126</p>
+										</div>
+										<div class="col s4 m6 l4">
+											<p class="waves-effect grey-text text-darken-2">Followers</p>
+											<p class="waves-effect blue-text text-darken-2">45</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col s12">
+							<div class="card-panel grey lighten-4">
+								Trends<br><br>
+								<div class="row">
+									<div> <!-- repeat here the trends hash tags -->
+										<div class="col s12">
+											<a class="waves-effect blue-text text-lighten-1" href="#">#OmSaiRam</a>
+										</div>
+										<div class="col s12">
+											<a class="waves-effect blue-text text-lighten-1" href="#">#Sairam</a>
+										</div>
+										<div class="col s12">
+											<a class="waves-effect blue-text text-lighten-1" href="#">#NamaShivaya</a>
+										</div>
+										<div class="col s12">
+											<a class="waves-effect blue-text text-lighten-1" href="#">#JaiShriRam</a>
+										</div>
+										<div class="col s12">
+											<a class="waves-effect blue-text text-lighten-1" href="#">#JaiHanuman</a>
+										</div>
+									</div>										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l6">
+					<div class="row">
+						<div><!-- repeat here --> <!-- you need to repeat this -->
+							<div class="col s12">
+								<div class="card hoverable">
+										<div class="row">
+											<p></p>
+										</div>
+										<div class="row">
+											<div class="col s12 m4 l1">
+												<a href="https://github.com/vaisham92"><img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="50" width="45"></a>
+											</div>
+											<div class="col s12 m4 l4">
+												<div class="row">
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan Reddy
+														</a>
+													</div>
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									<div class="card-content">
+										<div class="row">
+											<div class="col s12 m3 l1">
+												<p></p>
+											</div>
+											<div class="col s12 m3">
+												<p>Jai Hind</p>
+												<img src="https://c1.staticflickr.com/3/2411/2166434883_3470811d28.jpg" height="500" width="550">
+											</div>
+										</div>
+									</div>
+									<div class="card-action">
+										<div class = "row">
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">reply</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">loop</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">favorite</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">more_horiz</i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="card hoverable">
+										<div class="row">
+											<p></p>
+										</div>
+										<div class="row">
+											<div class="col s12 m4 l1">
+												<a href="https://github.com/vaisham92"><img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="50" width="45"></a>
+											</div>
+											<div class="col s12 m4 l4">
+												<div class="row">
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan Reddy
+														</a>
+													</div>
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									<div class="card-content">	
+										<p>This is a demo tweet. This tweet is posted on the twitter application developed by Vaishampayan Reddy Pathuri. https://github.com/vaisham92.</p>
+									</div>
+									<div class="card-action">
+										<div class = "row">
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">reply</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">loop</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">favorite</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">more_horiz</i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="card hoverable">
+										<div class="row">
+											<p></p>
+										</div>
+										<div class="row">
+											<div class="col s12 m4 l1">
+												<a href="https://github.com/vaisham92"><img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="50" width="45"></a>
+											</div>
+											<div class="col s12 m4 l4">
+												<div class="row">
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan Reddy
+														</a>
+													</div>
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									<div class="card-content">	
+										<p>This is a demo tweet. This tweet is posted on the twitter application developed by Vaishampayan Reddy Pathuri. https://github.com/vaisham92.</p>
+									</div>
+									<div class="card-action">
+										<div class = "row">
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">reply</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">loop</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">favorite</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">more_horiz</i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="card hoverable">
+										<div class="row">
+											<p></p>
+										</div>
+										<div class="row">
+											<div class="col s12 m4 l1">
+												<a href="https://github.com/vaisham92"><img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="50" width="45"></a>
+											</div>
+											<div class="col s12 m4 l4">
+												<div class="row">
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan Reddy
+														</a>
+													</div>
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									<div class="card-content">	
+										<p>This is a demo tweet. This tweet is posted on the twitter application developed by Vaishampayan Reddy Pathuri. https://github.com/vaisham92.</p>
+									</div>
+									<div class="card-action">
+										<div class = "row">
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">reply</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">loop</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">favorite</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">more_horiz</i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="card hoverable">
+										<div class="row">
+											<p></p>
+										</div>
+										<div class="row">
+											<div class="col s12 m4 l1">
+												<a href="https://github.com/vaisham92"><img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="50" width="45"></a>
+											</div>
+											<div class="col s12 m4 l4">
+												<div class="row">
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan Reddy
+														</a>
+													</div>
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									<div class="card-content">	
+										<p>This is a demo tweet. This tweet is posted on the twitter application developed by Vaishampayan Reddy Pathuri. https://github.com/vaisham92.</p>
+									</div>
+									<div class="card-action">
+										<div class = "row">
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">reply</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">loop</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">favorite</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">more_horiz</i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="card hoverable">
+										<div class="row">
+											<p></p>
+										</div>
+										<div class="row">
+											<div class="col s12 m4 l1">
+												<a href="https://github.com/vaisham92"><img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="50" width="45"></a>
+											</div>
+											<div class="col s12 m4 l4">
+												<div class="row">
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan Reddy
+														</a>
+													</div>
+													<div class="col s12">
+														<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									<div class="card-content">	
+										<p>This is a demo tweet. This tweet is posted on the twitter application developed by Vaishampayan Reddy Pathuri. https://github.com/vaisham92.</p>
+									</div>
+									<div class="card-action">
+										<div class = "row">
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">reply</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">loop</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">favorite</i></a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons">more_horiz</i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l3">
+					<div class="card-panel grey lighten-4">
+						<div> <!-- repeat follow people here -->
+							<div class="row">
+								<div class="col s6 m4 l2">
+									<a href="">
+										<img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="40" width="36">
+									</a>
+								</div>
+								<div class="col s6 m4 l5">
+									<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan</a>
+									<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+								</div>
+								<div class="col s6 m4 l4">
+									<a class="white btn" href=""><i class="blue-text text material-icons">person_add</i></a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s6 m4 l2">
+									<a href="">
+										<img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="40" width="36">
+									</a>
+								</div>
+								<div class="col s6 m4 l5">
+									<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan</a>
+									<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+								</div>
+								<div class="col s6 m4 l4">
+									<a class="white btn" href=""><i class="blue-text text material-icons">person_add</i></a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s6 m4 l2">
+									<a href="">
+										<img class="hoverable" style="border-radius:6px" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_0_bigger.png" height="40" width="36">
+									</a>
+								</div>
+								<div class="col s6 m4 l5">
+									<a href="https://github.com/vaisham92" class="waves-effect black-text text-lighten-1">Vaishampayan</a>
+									<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
+								</div>
+								<div class="col s6 m4 l5">
+									<a class="white btn" href=""><i class="blue-text text material-icons">person_add</i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer blue lighten-2">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Twitter Inc.</h5>
+					<p class="grey-text text-lighten-4">See what's happening right now.</p>
+					<p class="grey-text text-lighten-4">Find community, conversation and inspiration about the things you love.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Popular Tweets</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2016 Copyright @Vaishampayan Reddy Pathuri
+				<a class="grey-text text-lighten-4 right" href="#!">More Info about the author</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
