@@ -57,7 +57,7 @@
 	<header>
 		<div class="navbar-fixed">
 			<nav>
-				<div class="nav-wrapper grey lighten-4">
+				<div class="nav-wrapper white">
 					<ul class="left hide-on-med-and-down">
 						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
 						<li><a class="waves-effect blue-text text-lighten-1" href="#"><i class="material-icons left">home</i>Home</a></li>
@@ -67,18 +67,26 @@
 					</ul>
 					<ul class="right hide-on-med-and-down">
 						<!-- Dropdown Trigger -->
-						<li><a class="dropdown-button" href="#!" data-activates="dropdown1"><img style="border-radius:6px" src="vaisham.png" height="30" width="36"></a></li>
-						<li><a class="waves effect waves-light hoverable blue lighten-2" href="#"><i class="material-icons left">border_color</i>Tweet</a></li>
+						<li>
+							<a class="dropdown-button" href="#!" data-activates="dropdown1">
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img style="border-radius:6px" src="vaisham.png" height="30" width="36">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light hoverable blue lighten-2" href="#">
+								<i class="material-icons left">border_color</i>Tweet
+							</a>
+						</li>
 					</ul>
 					<ul id="dropdown1" class="dropdown-content">
-						<li><a class="waves effect waves-light hoverable bold" href="#!">My Profile</a></li>
-						<li><a class="waves effect waves-light hoverable" href="#!">Account Settings</a></li>
+						<li><a class="waves-effect waves-light hoverable bold" href="#!">My Profile</a></li>
+						<li><a class="waves-effect waves-light hoverable" href="#!">Account Settings</a></li>
 						<li class="divider"></li>
-						<li><a class="waves effect waves-light hoverable" href="#!">Help</a></li>
-						<li><a class="waves effect waves-light hoverable" href="#!">Privacy</a></li>
+						<li><a class="waves-effect waves-light hoverable" href="#!">Help</a></li>
+						<li><a class="waves-effect waves-light hoverable" href="#!">Privacy</a></li>
 						<li class="divider"></li>
-						<li><a class="waves effect waves-light hoverable" href="#!">Settings</a></li>
-						<li><a class="waves effect waves-light hoverable" href="login.html">Log out</a></li>
+						<li><a class="waves-effect waves-light hoverable" href="#!">Settings</a></li>
+						<li><a class="waves-effect waves-light hoverable" href="login.html">Log out</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -90,7 +98,7 @@
 				<div class="col s12 m4 l3">
 					<div class="row">
 						<div class="col s12">
-							<div class="card grey lighten-4">
+							<div class="card white">
 								<div class="card-image">
 									<img src="twitter_blue.png" height="90">
 								</div>
@@ -127,7 +135,7 @@
 							</div>
 						</div>
 						<div class="col s12">
-							<div class="card-panel grey lighten-4">
+							<div class="card-panel white">
 								Trends<br><br>
 								<div class="row">
 									<div> <!-- repeat here the trends hash tags -->
@@ -154,6 +162,60 @@
 				</div>
 				<div class="col s12 m4 l6">
 					<div class="row">
+					<!-- Tweet box Starts here -->
+						<div>
+							<div class="col s12">
+								<div class="card  light-blue lighten-5">
+									<div class="row">
+										<p></p>
+									</div>
+									<div class="row">
+										<div class="col s12 m4 l1">
+											<div class="row">
+												<div class="col s12">
+													<p></p>
+												</div>
+												<div class="col s12">
+													<p></p>
+												</div>
+												<div class="col s12">
+													<a href="https://github.com/vaisham92">
+														<img class="hoverable" style="border-radius:6px" src="vaisham.png" height="36" width="36">
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col s12 m4 l11">
+											<div class="input-field col s12">
+												<label for="tweet-box">What's happening?</label>
+												<textarea id="tweet-box" text="" class="materialize-textarea white" maxlength="140">
+												</textarea>
+											</div>
+										</div>
+									</div>
+									<div class="card-action">
+										<div class = "row">
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons left">camera_alt</i>Media</a>
+											</div>
+											<div class="col s12 m2 l3">
+												<a href="#"><i class="material-icons left">location_on</i>Location</a>
+											</div>
+											<div class="col s12 m2 l2">
+												<a href="#"><i class="material-icons left">poll</i>Poll</a>
+											</div>
+											<div class="col s12 m2 l1">
+												<label class="">140</label>
+											</div>
+											<div class="col s12 m2 l4">
+												<a class = "waves-effect waves-light blue lighten-1 btn disabled"><i class="material-icons left">border_color</i>Tweet</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Tweet box Ends here -->
 						<div><!-- repeat here --> <!-- you need to repeat this -->
 							<div class="col s12">
 								<div class="card hoverable">
@@ -419,7 +481,7 @@
 					</div>
 				</div>
 				<div class="col s12 m4 l3">
-					<div class="card-panel grey lighten-4">
+					<div class="card-panel white">
 						<div> <!-- repeat follow people here -->
 							<div class="row">
 								<div class="col s6 m4 l2">
@@ -432,7 +494,7 @@
 									<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
 								</div>
 								<div class="col s6 m4 l4">
-									<a class="white btn" href=""><i class="blue-text text material-icons">person_add</i></a>
+									<a class="btn white waves-effect waves-blue" href="#"><i class="blue-text text material-icons">person_add</i></a>
 								</div>
 							</div>
 							<div class="row">
@@ -446,7 +508,7 @@
 									<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
 								</div>
 								<div class="col s6 m4 l4">
-									<a class="white btn" href=""><i class="blue-text text material-icons">person_add</i></a>
+									<a class="btn white waves-effect waves-blue" href="#"><i class="blue-text text material-icons">person_add</i></a>
 								</div>
 							</div>
 							<div class="row">
@@ -460,7 +522,7 @@
 									<a href="https://github.com/vaisham92" class="waves-effect grey-text text-lighten-1">@vaisham92</a>
 								</div>
 								<div class="col s6 m4 l5">
-									<a class="white btn" href=""><i class="blue-text text material-icons">person_add</i></a>
+									<a class="btn white waves-effect waves-blue" href="#"><i class="blue-text text material-icons">person_add</i></a>
 								</div>
 							</div>
 						</div>
